@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MediBridge</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        header {
+            background-color: #016599;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.5rem 1rem;
+            height: 80px; /* Adjust this value to set your desired header height */
+        }
+        .container {
+            max-width: 80%;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .card {
+            transition: all 0.3s ease-in-out;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transform: scale(0.95);
+            transform-origin: center center;
+            background-color: white; /* Add this line */
+        }
+        .card:hover {
+            transform: scale(1);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+        @media (max-width: 768px) {
+            .card {
+                transform: scale(1);
+            }
+            .card:hover {
+                transform: none;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+        }
+        footer {
+            background-color: #016599;
+            color: white;
+            text-align: center;
+            padding: 20px 0; /* Add padding to the footer */
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        h2 {
+            color: #016599;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="MediBridge.webp" alt="MediBridge Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        <iframe id="JotFormIFrame-242721368967468" title="Web Contact Form Template" 
+        onload="window.parent.scrollTo(0,0)" allowtransparency="true" allow="geolocation; microphone; camera; fullscreen" 
+        src="https://form.jotform.com/242721368967468" frameborder="0" style="min-width:100%;max-width:100%;height:539px;border:none;" 
+        scrolling="no" > </iframe> <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script> 
+        <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-242721368967468']", "https://form.jotform.com/")</script> 
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MediBridge. All rights reserved.</p>
+    </footer>
+    <script>
+        window.addEventListener('mouseover', initLandbot, { once: true });
+        window.addEventListener('touchstart', initLandbot, { once: true });
+        var myLandbot;
+        function initLandbot() {
+          if (!myLandbot) {
+            var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
+            s.addEventListener('load', function() {
+              myLandbot = new Landbot.Popup({
+                configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2622464-1X8WRA8TFQBUXJPF/index.json',
+              });
+            });
+            s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+          }
+        }
+        </script>
+</body>
+</html>

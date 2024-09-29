@@ -1,0 +1,238 @@
+body {
+    background-image: url('bg.png');
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: #016599;
+    color: white;
+ 
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px; /* Adjust as needed */
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1.5rem; /* Increased spacing between nav items */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold; /* Optional: makes the nav text bold */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Optional: adds underline on hover */
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    padding: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+#results {
+    width: 80%; 
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0; }
+
+footer {
+    background-color: #016599;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.logo {
+    height: 100%;
+}
+
+.logo img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+.centered-title {
+    text-align: center;
+    color: #016599;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+.quote {
+    text-align: center;
+    color: #016599;
+    font-style: italic;
+    margin-bottom: 2rem;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    width: 80%; 
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#search-input {
+    width: 80%;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border: 2px solid #016599;
+    border-radius: 4px 0 0 4px;
+}
+
+button {
+    width: 20%; 
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    background-color: #016599;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #015280;
+}
+
+.hospital-card {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; 
+}
+
+.hospital-image {
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+}
+
+.hospital-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hospital-info {
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.hospital-name {
+    margin: 0 0 10px 0;
+    color: #016599;
+}
+
+.hospital-details {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.hospital-services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.service-tag {
+    background-color: #016599;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+#search-results {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+#clock {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.clock-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 80px;
+}
+
+.clock-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.clock-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-top: 0.25rem;
+}

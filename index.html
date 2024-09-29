@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediBridge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <img src="MediBridge.webp" alt="MediBridge Logo">
+            </div>
+        </div>
+        <div class="header-right">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1 class="centered-title">Welcome to MediBridge</h1>
+        <p class="quote">"Heal from the heart, not the mind. Both are necessary, but the heart is important." - Dr. Paul Kalanithi</p>
+        <br> <br>
+        <div id="clock">
+            <div class="clock-item">
+                <span id="day" class="clock-value"></span>
+                <span class="clock-label">Day</span>
+            </div>
+            <div class="clock-item">
+                <span id="date" class="clock-value"></span>
+                <span class="clock-label">Date</span>
+            </div>
+            <div class="clock-item">
+                <span id="month" class="clock-value"></span>
+                <span class="clock-label">Month</span>
+            </div>
+            <div class="clock-item">
+                <span id="year" class="clock-value"></span>
+                <span class="clock-label">Year</span>
+            </div>
+            <div class="clock-item">
+                <span id="hours" class="clock-value"></span>
+                <span class="clock-label">Hours</span>
+            </div>
+            <div class="clock-item">
+                <span id="minutes" class="clock-value"></span>
+                <span class="clock-label">Minutes</span>
+            </div>
+            <div class="clock-item">
+                <span id="seconds" class="clock-value"></span>
+                <span class="clock-label">Seconds</span>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="search-wrapper">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search by location, hospital name, or services">
+                <button onclick="searchHospitals()">Search</button>
+            </div>
+        </div>
+        <div id="results">
+            <div class="hospital-card">
+                <div class="hospital-image">
+                    <img src="hospital1.jpg" alt="Hospital 1">
+                </div>
+                <div class="hospital-info">
+                    <h2 class="hospital-name"></h2>
+                    <p class="hospital-details">
+                       
+                    </p>
+                    <div class="hospital-services">
+                        <span class="service-tag">Cancer</span>
+                        <span class="service-tag">Cardiology</span>
+                        <span class="service-tag">Neurology</span>
+                        <span class="service-tag">Pediatrics</span>
+                        <span class="service-tag">Orthopedics</span>
+                        <span class="service-tag">Dermatology</span>
+                        <span class="service-tag">Urology</span>
+                        <span class="service-tag">Gastroenterology</span>
+                        <span class="service-tag">Endocrinology</span>
+                        <span class="service-tag">Gynecology</span>
+                        <span class="service-tag">Ophthalmology</span>
+                        <span class="service-tag">ENT</span>
+                        <span class="service-tag">Pulmonology</span>
+                        <span class="service-tag">Nephrology</span>
+                        <span class="service-tag">Hematology</span>
+                        <span class="service-tag">Rheumatology</span>
+                        <span class="service-tag">Psychiatry</span>
+                        <span class="service-tag">Oncology</span>
+                        <span class="service-tag">Radiology</span>
+                        <span class="service-tag">Anesthesiology</span>
+                        <span class="service-tag">Immunology</span>
+                        <span class="service-tag">Neonatology</span>
+                        <span class="service-tag">Geriatrics</span>
+                        <span class="service-tag">Vascular Surgery</span>
+                        <span class="service-tag">Plastic Surgery</span>
+                        <span class="service-tag">Allergy</span>
+                        <span class="service-tag">Dentistry</span>
+                        <span class="service-tag">Physiotherapy</span>
+                        <span class="service-tag">Nutrition</span>
+                        <span class="service-tag">Sports Medicine</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MediBridge. All rights reserved.</p>
+    </footer>
+
+<script src="script.js"></script>
+    <script>
+        window.addEventListener('mouseover', initLandbot, { once: true });
+        window.addEventListener('touchstart', initLandbot, { once: true });
+        var myLandbot;
+        function initLandbot() {
+          if (!myLandbot) {
+            var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
+            s.addEventListener('load', function() {
+              myLandbot = new Landbot.Popup({
+                configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2622464-1X8WRA8TFQBUXJPF/index.json',
+              });
+            });
+            s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+          }
+        }
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us - MediBridge</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            header {
+                background-color: #016599;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0.5rem 1rem;
+                height: 80px; /* Adjust this value to set your desired header height */
+            }
+            .container {
+                max-width: 80%;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+            .card {
+                transition: all 0.3s ease-in-out;
+                margin-bottom: 20px;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transform: scale(0.95);
+                transform-origin: center center;
+                background-color: white; /* Add this line */
+            }
+            .card:hover {
+                transform: scale(1);
+                box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+            }
+            @media (max-width: 768px) {
+                .card {
+                    transform: scale(1);
+                }
+                .card:hover {
+                    transform: none;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                }
+            }
+            footer {
+                background-color: #016599;
+                color: white;
+                text-align: center;
+                padding: 20px 0; /* Add padding to the footer */
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
+            h2 {
+                color: #016599;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="MediBridge.webp" alt="MediBridge Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+     <main>
+        <div class="container">
+            <div class="content">
+                <h1>About Us</h1>
+                <div class="card">
+                    <h2>Welcome to MediBridge</h2>
+                    <p>Your trusted link to finding the right hospital services</p>
+                    <p>At MediBridge, we believe that accessing quality healthcare should be simple and stress-free. Our platform is designed to connect you to hospitals that offer the exact services you need, whether it’s for routine care, specialized treatments, or emergencies.</p>
+                </div>
+                <div class="card">
+                    <h2>Who We Are</h2>
+                    <p>Our names are Krishaang Kaushik & Shrish Verma, and we are making a project in the expertise of HTML, CSS, JavaScript, Building a website for the expert Code Day 2024</p>
+                </div>
+                <div class="card">
+                    <h2>Our Mission</h2>
+                    <p>MediBridge is committed to bridging the gap between patients and healthcare providers. We aim to help you find hospitals with the right services, ensuring that you or your loved ones receive timely and accurate care.</p>
+                </div>
+                <div class="card">
+                    <h2>What We Do</h2>
+                    <ul>
+                        <li>Real-Time Updates: Access live information on hospital services, including availability in your area.</li>
+                        <li>Specialized Filters: Search hospitals by department, such as neurology, orthopedics, maternity, and more.</li>
+                        <li>Quick Navigation: Our platform helps you find hospitals with available slots and resources for everything from minor check-ups to major surgeries.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h2>Why Choose MediBridge?</h2>
+                    <ul>
+                        <li>Fast & Accurate: Save time by instantly finding hospitals with the specific services you need.</li>
+                        <li>Comprehensive Network: We connect you with a broad range of hospitals and healthcare providers.</li>
+                        <li>User-Centered: Our easy-to-use platform ensures that you quickly find what you're looking for, even in critical situations.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h2>Our Commitment to You</h2>
+                    <p>At MediBridge, we are more than just a service finder—we’re your partner in accessing reliable healthcare. Our goal is to make your journey to the right hospital as smooth as possible.</p>
+                    <p>MediBridge – Bridging the gap between you and the care you need.</p>
+                </div>
+            </div>
+        </div>
+     </main>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <footer>
+        <p>&copy; 2024 MediBridge. All rights reserved.</p>
+    </footer>
+    <script>
+        window.addEventListener('mouseover', initLandbot, { once: true });
+        window.addEventListener('touchstart', initLandbot, { once: true });
+        var myLandbot;
+        function initLandbot() {
+          if (!myLandbot) {
+            var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
+            s.addEventListener('load', function() {
+              myLandbot = new Landbot.Popup({
+                configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2622464-1X8WRA8TFQBUXJPF/index.json',
+              });
+            });
+            s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+          }
+        }
+        </script>
+    </body>
+</html>
+
